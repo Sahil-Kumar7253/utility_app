@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:utility_app/features/Calculator/calculator.dart';
 import 'package:utility_app/features/CurrencyConverter/Converter_page.dart';
 import 'package:utility_app/features/weather/weather_page.dart';
 
@@ -13,7 +14,8 @@ class _BottomNavBarExampleState extends State<BottomNavBarExample> {
   // List of screens for the navigation
   final List<Widget> _screen = [
     const WeatherPage(),
-    const ConverterPage()
+    const ConverterPage(),
+    Calculator()
   ];
 
   @override
@@ -35,7 +37,11 @@ class _BottomNavBarExampleState extends State<BottomNavBarExample> {
           ),
           const BottomNavigationBarItem(
             icon: Icon(Icons.swap_horiz),
-            label: 'News',
+            label: 'Conversion',
+          ),
+          const BottomNavigationBarItem(
+            icon: Icon(Icons.add),
+            label: 'Calculator',
           ),
         ],
       ),
