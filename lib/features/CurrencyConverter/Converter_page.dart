@@ -57,7 +57,7 @@ class _ConverterPage extends State<ConverterPage> {
   @override
   Widget build(BuildContext context) {
      return Scaffold(
-       backgroundColor: const Color(0xFF1d2360),
+       backgroundColor: const Color(0xFF3694E1),
        appBar: AppBar(
          backgroundColor: Colors.transparent,
          elevation: 10,
